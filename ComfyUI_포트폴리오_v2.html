@@ -1,0 +1,2106 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ComfyUI × FITLUNA · 웹퍼블리셔 포트폴리오</title>
+    <meta
+      name="description"
+      content="ComfyUI를 직접 학습하기 위해 설치하고, 알맞은 기능들을 선별해 연습용 쇼핑몰 화면에 구현한 웹퍼블리셔 포트폴리오입니다."
+    />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/demos.css" />
+    <link rel="stylesheet" href="css/page.css" />
+  </head>
+  <body>
+    <a class="sr-only skip" href="#shop">본문 바로가기</a>
+
+    <header class="top">
+      <div class="wrap">
+        <a class="logo" href="#top"
+          ><b>COMFYUI × FITLUNA</b><span>웹퍼블리셔 포트폴리오</span></a
+        >
+        <nav aria-label="섹션 바로가기">
+          <a href="#shop"><i>01</i>직접 써 보기</a>
+          <a href="#why"><i>02</i>도전한 이유</a>
+          <a href="#comfy"><i>03</i>ComfyUI</a>
+          <a href="#how"><i>04</i>만든 과정</a>
+          <a href="#issue"><i>05</i>문제 해결</a>
+          <a href="#rules"><i>06</i>차이점</a>
+        </nav>
+      </div>
+      <span class="progress" aria-hidden="true"></span>
+    </header>
+
+    <!-- 첫 화면 -->
+    <div class="wrap" id="top">
+      <section class="hero" aria-label="프로젝트 소개">
+        <div>
+          <p class="eyebrow">PROJECT · AI IMAGE × WEB PUBLISHING</p>
+          <h1>
+            ComfyUI를 직접 실행하고,<br />알맞은 기능을 골라<br /><em
+              >쇼핑몰 화면에</em
+            >
+            구현했습니다
+          </h1>
+          <p class="lead">
+            생성형 AI는 그동안 나노바나나(Gemini), GPT 같은 채팅형 AI로 써
+            왔습니다. 이번 포트폴리오는 그와 다르게,
+            <b>ComfyUI를 직접 학습하기 위해 설치하고</b>, 알맞은 기능들을 선별해
+            웹 화면에 구현했습니다.
+          </p>
+          <ul class="stack" aria-label="사용 기술">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>SVG</li>
+            <li>ComfyUI</li>
+          </ul>
+          <div class="cta">
+            <a class="btn dark" href="#shop"
+              >상품 페이지 직접 써 보기
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M12 5v14M5 12l7 7 7-7" /></svg
+            ></a>
+            <a class="btn" href="#how">만든 과정 보기</a>
+          </div>
+        </div>
+        <figure class="devices">
+          <div class="pc">
+            <div class="bar" aria-hidden="true"><i></i><i></i><i></i></div>
+            <img
+              src="assets/v2/shot_pc.jpg"
+              alt="PC에서 본 연습용 상품 페이지"
+            />
+          </div>
+          <div class="mo">
+            <img
+              src="assets/v2/shot_mo.jpg"
+              alt="휴대폰에서 본 연습용 상품 페이지"
+            />
+          </div>
+          <figcaption>
+            결과물을 PC와 휴대폰 폭(390px)에서 열어 캡처한 화면
+          </figcaption>
+        </figure>
+      </section>
+    </div>
+
+    <section class="info" aria-label="프로젝트 정보">
+      <dl class="wrap">
+        <div>
+          <dt>PERIOD</dt>
+          <dd>2026.11.02 – 11.05<small>4일</small></dd>
+        </div>
+        <div>
+          <dt>TYPE</dt>
+          <dd>개인 프로젝트<small>연습용 샘플 브랜드 FITLUNA</small></dd>
+        </div>
+        <div>
+          <dt>ROLE</dt>
+          <dd>
+            이미지 제작 · 화면 구현<small>ComfyUI, HTML · CSS · JS</small>
+          </dd>
+        </div>
+        <div>
+          <dt>OUTPUT</dt>
+          <dd>연습용 상품 페이지 1개<small>ComfyUI 기능 5가지 적용</small></dd>
+        </div>
+        <div>
+          <dt>CHECKED</dt>
+          <dd>PC · 휴대폰(390px)<small>파일로 열어도 동작</small></dd>
+        </div>
+      </dl>
+    </section>
+
+    <nav class="section-map wrap" aria-label="프로젝트 흐름">
+      <p>
+        <span>PROJECT FLOW</span>결과부터 빠르게 보고, 궁금한 과정으로
+        이동하세요.
+      </p>
+      <ol>
+        <li>
+          <a href="#shop"
+            ><i>01</i
+            ><span
+              ><b>직접 써 보기</b
+              ><small>완성한 상품 페이지와 5가지 기능</small></span
+            ><em aria-hidden="true">↘</em></a
+          >
+        </li>
+        <li>
+          <a href="#why"
+            ><i>02</i
+            ><span
+              ><b>도전한 이유</b
+              ><small>채팅형 AI에서 느낀 세 가지 한계</small></span
+            ><em aria-hidden="true">↘</em></a
+          >
+        </li>
+        <li>
+          <a href="#comfy"
+            ><i>03</i
+            ><span
+              ><b>ComfyUI</b><small>도구의 구조, 설치와 실행 기록</small></span
+            ><em aria-hidden="true">↘</em></a
+          >
+        </li>
+        <li>
+          <a href="#how"
+            ><i>04</i
+            ><span
+              ><b>만든 과정</b
+              ><small>이미지 재료를 화면 기능으로 구현</small></span
+            ><em aria-hidden="true">↘</em></a
+          >
+        </li>
+        <li>
+          <a href="#issue"
+            ><i>05</i
+            ><span
+              ><b>문제 해결</b><small>파일·모바일·접근성 예외 대응</small></span
+            ><em aria-hidden="true">↘</em></a
+          >
+        </li>
+        <li>
+          <a href="#rules"
+            ><i>06</i
+            ><span><b>차이점</b><small>써야 할 때와 쓰지 않을 때</small></span
+            ><em aria-hidden="true">↘</em></a
+          >
+        </li>
+      </ol>
+    </nav>
+
+    <div class="wrap doc">
+      <aside class="toc" aria-label="목차">
+        <p>PROJECT FLOW</p>
+        <ol>
+          <li>
+            <a href="#shop"><i>01</i>직접 써 보기</a>
+          </li>
+          <li>
+            <a href="#why"><i>02</i>도전한 이유</a>
+          </li>
+          <li>
+            <a href="#comfy"><i>03</i>ComfyUI</a>
+          </li>
+          <li>
+            <a href="#how"><i>04</i>만든 과정</a>
+          </li>
+          <li>
+            <a href="#issue"><i>05</i>문제 해결</a>
+          </li>
+          <li>
+            <a href="#rules"><i>06</i>차이점</a>
+          </li>
+        </ol>
+      </aside>
+
+      <main>
+        <!-- 02 도전한 이유 -->
+        <section class="sec" id="why">
+          <header class="sec-hd">
+            <span class="no">02</span>
+            <div>
+              <small>WHY</small>
+              <h2>도전한 이유</h2>
+            </div>
+          </header>
+
+          <div class="sub">
+            <div class="sub-hd">
+              <h3>채팅형 AI로 이미지를 만들 때 아쉬운 점</h3>
+              <p>
+                나노바나나(Gemini)로 쇼핑몰 이미지를 만들면서 실제로 겪은
+                장면입니다. 사진은 모두 그때 받은 결과 그대로입니다.
+              </p>
+            </div>
+            <div class="scenes">
+              <article class="scene card">
+                <div class="shots">
+                  <figure>
+                    <img
+                      src="assets/v3/02_skin.jpg"
+                      alt="처음 받은 스타킹 컷"
+                    />
+                    <figcaption>처음 받은 컷</figcaption>
+                  </figure>
+                  <figure class="bad">
+                    <img
+                      src="assets/v3/14_black_detailed.jpg"
+                      alt="다시 부탁해서 포즈와 옷이 바뀐 컷"
+                    />
+                    <figcaption>다시 부탁한 컷</figcaption>
+                  </figure>
+                </div>
+                <div class="txt">
+                  <span class="tag"
+                    >다시 부탁하면 다른 사진이 되는 것을 확인</span
+                  >
+                  <h4>색만 바꾸고 싶었는데, 포즈와 옷까지 바뀌는 현상 확인</h4>
+                  <p class="ask">
+                    <small>이렇게 부탁했습니다 (요약)</small>첫 컷과 같은 배경,
+                    조명, 구도를 문장으로 자세히 적고 블랙 스타킹 버전으로
+                  </p>
+                  <p class="what-happened">
+                    배경과 조명을 아무리 자세히 적어도 다리 자세와 옷이
+                    달라졌고, 첫 컷을 첨부하고 나서야 맞춰졌습니다. 고칠 때마다
+                    다시 요청했고, 그때마다 사용량이 차감되는 방식이다 보니
+                    사용량을 줄일 필요가 있었습니다.
+                  </p>
+                  <div class="then">
+                    <p>
+                      → 값만 바꿔 같은 조건으로 다시 돌릴 수 있는지<span
+                        >ComfyUI에서는 값을 바꿔 다시 실행 시, 2초 이내</span
+                      >
+                    </p>
+                  </div>
+                </div>
+              </article>
+              <article class="scene card">
+                <div class="shots">
+                  <figure class="bad">
+                    <img
+                      src="assets/v3/04_camisole.jpg"
+                      alt="반바지까지 이어진 옷이 나온 컷"
+                    />
+                    <figcaption>캐미솔을 원했는데</figcaption>
+                  </figure>
+                  <figure>
+                    <img
+                      src="assets/v3/A_camisole_red.jpg"
+                      alt="고칠 곳을 빨간색으로 칠한 이미지"
+                    />
+                    <figcaption>빨갛게 칠해 다시 요청</figcaption>
+                  </figure>
+                </div>
+                <div class="txt">
+                  <span class="tag">원하는 모양이 안 나옴</span>
+                  <h4>몇 번을 다시 뽑아도 반바지까지 이어진 옷이 나왔습니다</h4>
+                  <p class="ask">
+                    <small>이렇게 부탁했습니다 (요약)</small>심리스 캐미솔 한
+                    장, 흰색~연분홍 배경, 1:1
+                  </p>
+                  <p class="what-happened">
+                    말로는 "어디까지"를 정확히 전달하기 어려웠습니다. 결국 고칠
+                    곳을 빨간색으로 칠한 이미지를 첨부하여 수정하였습니다.
+                  </p>
+                  <div class="then">
+                    <p>
+                      → 원하는 부분만 정확히 골라 쓸 수 있는지<span
+                        >ComfyUI에서는 단어 하나로 옷 영역만 골라냄</span
+                      >
+                    </p>
+                  </div>
+                </div>
+              </article>
+              <article class="scene card">
+                <div class="shots wide">
+                  <figure>
+                    <img
+                      src="assets/v3/Z_text_orig.jpg"
+                      alt="상자에 SEE-THROUGH라고 적힌 원래 사진"
+                    />
+                    <figcaption>원래 글자</figcaption>
+                  </figure>
+                  <figure class="bad">
+                    <img
+                      src="assets/v3/Z_text_up.jpg"
+                      alt="글자가 BEY PREWEDR로 바뀐 사진"
+                    />
+                    <figcaption>선명하게 해 달라고 한 뒤</figcaption>
+                  </figure>
+                </div>
+                <div class="txt">
+                  <span class="tag"
+                    >작은 글자를 AI 임의로 바꾸는 것을 확인</span
+                  >
+                  <h4>
+                    흐린 사진을 선명하게 해 달라고 했더니, 글자가 바뀌었습니다
+                  </h4>
+                  <p class="ask">
+                    <small>실제로 보낸 요청</small>Restore it into a sharp,
+                    high-resolution e-commerce photo. Keep exactly the same
+                    composition
+                  </p>
+                  <p class="what-happened">
+                    사진은 선명해졌지만, 상자에 적힌 SEE-THROUGH가 BEY
+                    PREWEDR라는 없는 단어로 바뀌는 것이 확인되었습니다.
+                  </p>
+                  <div class="then">
+                    <p>
+                      → 다른 방식으로 키우면 어떤지<span
+                        >ComfyUI도 뭉개진 글자는 못 살려서, 글자는 HTML로 넣기로
+                        진행하였습니다.</span
+                      >
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="sub page">
+            <div class="sub-hd">
+              <h3>두 가지를 다 써 보니 이런 점이 달랐습니다</h3>
+              <p>
+                ComfyUI는 AI로 이미지를 만드는 과정을 상자로 이어 저장해 두는
+                프로그램입니다. 무료로 배포되어 있는 템플릿을 활용해, 목적에
+                맞게 이미지와 설정값을 수정하여 결과물을 완성했습니다.
+              </p>
+            </div>
+            <div class="vs card">
+              <table>
+                <caption class="sr-only">
+                  채팅형 AI와 ComfyUI 비교
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col"><span class="sr-only">항목</span></th>
+                    <th scope="col">
+                      채팅형 AI<small
+                        >Gemini 나노바나나, ChatGPT 같은 웹 서비스</small
+                      >
+                    </th>
+                    <th scope="col" class="me">
+                      ComfyUI<small>로컬 PC에 설치</small>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">만드는 방법</th>
+                    <td data-l="채팅형 AI">사진을 올리고 말로 부탁</td>
+                    <td class="me" data-l="ComfyUI">
+                      템플릿에 사진을 넣고 실행
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">다시 만들 때</th>
+                    <td data-l="채팅형 AI">
+                      문장으로 다시 설명하고 새로 요청
+                      <div class="mini">
+                        <img src="assets/v3/02_skin.jpg" alt="" /><i>→</i
+                        ><img
+                          src="assets/v3/14_black_detailed.jpg"
+                          alt=""
+                        /><small>포즈와 옷이 바뀜</small>
+                      </div>
+                    </td>
+                    <td class="me" data-l="ComfyUI">
+                      <b>숫자나 단어 하나만 바꾸고 다시 실행</b>
+                      <div class="mini">
+                        <img src="assets/v3/f4_orig.jpg" alt="" /><i>→</i
+                        ><img src="assets/v3/f4_smile.jpg" alt="" /><small
+                          >smile 1.0만 바꿈</small
+                        >
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">사용량, 비용</th>
+                    <td data-l="채팅형 AI">요청할 때마다 사용량이 차감됨</td>
+                    <td class="me" data-l="ComfyUI">
+                      <b>로컬 PC가 진행하여 반복적으로 요청 가능</b><br />대신
+                      AI 모델 파일을 처음 한 번 받아야 함
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">결과</th>
+                    <td data-l="채팅형 AI">매번 조금씩 다름</td>
+                    <td class="me" data-l="ComfyUI">
+                      바꾼 값이 기록에 남아서 같은 조건으로 다시 돌릴 수 있음
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">나오는 것</th>
+                    <td data-l="채팅형 AI">
+                      완성된 이미지 한 장
+                      <div class="mini">
+                        <img src="assets/v3/04_camisole.jpg" alt="" /><small
+                          >배경까지 한 장</small
+                        >
+                      </div>
+                    </td>
+                    <td class="me" data-l="ComfyUI">
+                      이미지 및 <b>정밀한 화면 제어 요소</b>(마스크, 깊이 지도
+                      등)
+                      <div class="mini">
+                        <img src="assets/v3/f5_mask_cami.jpg" alt="" /><img
+                          src="assets/v3/f6_banner_depth.jpg"
+                          alt=""
+                        /><small>마스크 · 깊이 지도</small>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">잘 맞았던 일</th>
+                    <td data-l="채팅형 AI">
+                      처음 보는 컷을 말로 빠르게 만들기<br />(이번 표정 바꾸기에
+                      쓴 모델 얼굴도 Gemini로 만듦)
+                    </td>
+                    <td class="me" data-l="ComfyUI">
+                      같은 작업을 값만 바꿔 여러 번 돌리기
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="gloss">
+              용어 정의 : <b>마스크</b> 사진에서 남길 부분만 흰색으로 칠한 흑백
+              그림 <span>·</span> <b>깊이 지도</b> 카메라에 가까울수록 흰색으로
+              칠한 흑백 그림. 둘 다 웹페이지에서 효과를 낼 때 "어디에" 적용할지
+              알려 주는 재료가 됩니다.
+            </p>
+            <p class="vs-note">
+              채팅형 AI를 사용하지 않는 것이 아니라, 진행하는 목적에 따라 나눠
+              쓰게 됐습니다.
+            </p>
+          </div>
+        </section>
+
+        <!-- 03 ComfyUI -->
+        <section class="sec page" id="comfy">
+          <header class="sec-hd">
+            <span class="no">03</span>
+            <div>
+              <small>TOOL</small>
+              <h2>ComfyUI</h2>
+            </div>
+          </header>
+
+          <div class="sub">
+            <div class="sub-hd">
+              <h3>제가 직접 경험해 본 ComfyUI의 주요 특징은 다음과 같습니다</h3>
+              <p>
+                사진의 배경을 지우는 실제 작업 화면입니다. 각 기능이 담긴
+                상자들을 선으로 연결하며, 선으로 이은 순서대로 실행됩니다.
+              </p>
+            </div>
+            <div class="shot">
+              <img
+                src="assets/v3/about_ui.jpg"
+                alt="ComfyUI에서 배경 지우기를 실행한 작업 화면"
+              />
+              <span class="num" style="left: 13.5%; top: 42.3%">1</span>
+              <span class="num" style="left: 29.6%; top: 41%">2</span>
+              <span class="num" style="left: 50.5%; top: 42.3%">3</span>
+              <span class="num" style="left: 64.8%; top: 9.1%">4</span>
+            </div>
+            <div class="shot-key">
+              <div>
+                <span class="num">1</span
+                ><span><b>사진 넣는 상자</b>내 사진을 올리는 곳</span>
+              </div>
+              <div>
+                <span class="num">2</span
+                ><span
+                  ><b>일하는 상자</b>여기서는 배경 지우기. 상자마다 값을 바꿀 수
+                  있음</span
+                >
+              </div>
+              <div>
+                <span class="num">3</span
+                ><span
+                  ><b>결과 보는 상자</b>배경을 지운 사진과, 남긴 부분만 흰색인
+                  마스크가 따로 나옴</span
+                >
+              </div>
+              <div>
+                <span class="num">4</span
+                ><span><b>실행 버튼</b>누르면 왼쪽부터 순서대로 돎</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sub page">
+            <div class="sub-hd">
+              <h3>설치하고 직접 사용한 순서</h3>
+              <p>
+                ComfyUI는 설치와 필수 세팅만 마치면, 이후에는 아래 4~6번 과정만
+                반복하여 손쉽게 결과물을 만들 수 있었습니다.
+              </p>
+            </div>
+            <div class="steps6">
+              <figure class="card">
+                <div class="im">
+                  <img src="assets/v3/install_1.jpg" alt="" />
+                </div>
+                <figcaption>
+                  <b><span class="num">1</span>데스크톱 앱 받기</b>comfy.org에서
+                  Desktop을 내려받았습니다.
+                </figcaption>
+              </figure>
+              <figure class="card">
+                <div class="im">
+                  <img
+                    src="assets/v3/install_2.jpg"
+                    alt=""
+                    style="object-position: 50% 50%"
+                  />
+                </div>
+                <figcaption>
+                  <b><span class="num">2</span>설치</b>맥 환경 기준으로 진행한
+                  화면인 점 참고 부탁드립니다.
+                </figcaption>
+              </figure>
+              <figure class="card">
+                <div class="im">
+                  <img
+                    src="assets/v3/install_3.jpg"
+                    alt=""
+                    style="object-position: 50% 40%"
+                  />
+                </div>
+                <figcaption>
+                  <b><span class="num">3</span>내 컴퓨터로 실행 고르기</b>처음
+                  켤 때 Cloud 대신 Local을 골랐습니다. Cloud는 무료 실행이 몇
+                  번뿐이었습니다.
+                </figcaption>
+              </figure>
+              <figure class="card">
+                <div class="im">
+                  <img src="assets/v3/install_4.jpg" alt="" />
+                </div>
+                <figcaption>
+                  <b><span class="num">4</span>템플릿 고르기</b>목록에서 영어로
+                  검색하고, 유료라는 뜻인 👑·API 표시가 없는 무료 템플릿만
+                  골랐습니다.
+                </figcaption>
+              </figure>
+              <figure class="card">
+                <div class="im">
+                  <img src="assets/v3/install_5.jpg" alt="" />
+                </div>
+                <figcaption>
+                  <b><span class="num">5</span>빠진 모델 받기</b>템플릿을 처음
+                  열면 AI가 일하는 데 필요한 모델 파일(미리 학습된 파일)을
+                  받으라고 알려 줍니다. 한 번만 받으면 됩니다.
+                </figcaption>
+              </figure>
+              <figure class="card">
+                <div class="im">
+                  <img src="assets/v3/install_6.jpg" alt="" />
+                </div>
+                <figcaption>
+                  <b><span class="num">6</span>사진 넣고 실행</b>사진을 올리고
+                  값을 바꾼 뒤 실행 버튼을 눌렀습니다.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="sub">
+            <div class="sub-hd"><h3>값만 바꿔 다시 돌려 본 기록입니다</h3></div>
+            <div class="proof">
+              <div>
+                <h4>
+                  <small>REAL LOG</small>값만 바꿔 다시 돌린 기록 (표정 바꾸기)
+                </h4>
+                <p>
+                  기존 채팅형 AI에서 겪었던 '수정할 때마다 새로 요청하며
+                  기다려야 하는 불편함'을 개선했습니다. 최초 로딩(34초) 이후에는
+                  2초 이내에 결과물을 바로 확인하고 적용할 수 있어, 전체적인
+                  화면 구성과 작업 속도를 높일 수 있었습니다.
+                </p>
+              </div>
+              <div class="runs" role="table" aria-label="표정 바꾸기 실행 기록">
+                <div role="row">
+                  <span class="t" role="cell">20:18</span
+                  ><span class="v" role="cell">wink 23.5 <em>윙크</em></span
+                  ><span class="s" role="cell">34.0초</span>
+                </div>
+                <div role="row">
+                  <span class="t" role="cell">20:19</span
+                  ><span class="v" role="cell">smile 1.0 <em>미소</em></span
+                  ><span class="s" role="cell">1.8초</span>
+                </div>
+                <div role="row">
+                  <span class="t" role="cell">20:20</span
+                  ><span class="v" role="cell"
+                    >rotate_yaw 15 <em>고개 돌리기</em></span
+                  ><span class="s" role="cell">1.8초</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 01 직접 써 보기 -->
+        <section class="sec page" id="shop">
+          <header class="sec-hd">
+            <span class="no">01</span>
+            <div>
+              <small>RESULT · TRY IT</small>
+              <h2>직접 써 보기</h2>
+            </div>
+          </header>
+          <div class="sub">
+            <div class="sub-hd">
+              <h3>이렇게 만든 이미지를 연습용 상품 페이지에 붙였습니다</h3>
+              <p>
+                번호가 붙은 다섯 곳이 ComfyUI로 만든 재료에 HTML, CSS, JS를 붙인
+                부분입니다. 아래 상품 페이지에서 직접 만져 볼 수 있고, 번호를
+                누르면 만든 과정으로 이동합니다.
+              </p>
+            </div>
+
+            <p class="fit-note">
+              <b>참고</b>아래 상품 페이지는 제가 FITLUNA라는 가칭
+              쇼핑몰(포트폴리오를 위한 쇼핑몰)을 만들고, 임시로 제작해 본
+              화면입니다. 실제로 판매하는 사이트가 아니며, 상품과 가격은
+              예시입니다.
+            </p>
+            <div class="try" aria-label="이 페이지에서 해 볼 수 있는 것">
+              <a href="#s1"
+                ><span class="ico"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M12 3v18M3 12h18M9 6l3-3 3 3M9 18l3 3 3-3M6 9l-3 3 3 3M18 9l3 3-3 3"
+                    /></svg
+                  ><span class="num">1</span></span
+                ><span
+                  ><b>배너</b
+                  ><span class="d"
+                    ><span class="h-mouse">위에서 마우스를 움직여 보세요</span
+                    ><span class="h-touch">좌우로 끌어 보세요</span></span
+                  ></span
+                ></a
+              >
+              <a href="#s2"
+                ><span class="ico"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    aria-hidden="true"
+                  >
+                    <circle cx="7" cy="12" r="3.2" />
+                    <circle cx="17" cy="12" r="3.2" />
+                    <circle cx="12" cy="12" r="9.5" opacity=".35" /></svg
+                  ><span class="num">2</span></span
+                ><span
+                  ><b>색상 칩</b
+                  ><span class="d">눌러서 옷 색을 바꿔 보세요</span></span
+                ></a
+              >
+              <a href="#s3"
+                ><span class="ico"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M6 3l13 7-5.5 1.8L11.7 18z" /></svg
+                  ><span class="num">3</span></span
+                ><span
+                  ><b>귀걸이 카드</b
+                  ><span class="d"
+                    ><span class="h-mouse">마우스를 올려 보세요</span
+                    ><span class="h-touch"
+                      >PC에서 마우스를 올려 보세요</span
+                    ></span
+                  ></span
+                ></a
+              >
+              <a href="#s5"
+                ><span class="ico"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M3 8h18v8H3z" />
+                    <path d="M7 8v3M11 8v4M15 8v3M19 8v4" /></svg
+                  ><span class="num">5</span></span
+                ><span
+                  ><b>사이즈 가이드</b
+                  ><span class="d">가운데 막대를 좌우로 끌어 보세요</span></span
+                ></a
+              >
+              <a href="#how"
+                ><span class="ico"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M7 17L17 7M8 7h9v9" /></svg></span
+                ><span
+                  ><b>번호 배지</b
+                  ><span class="d">누르면 만든 과정으로 이동</span></span
+                ></a
+              >
+            </div>
+
+            <div class="mock" aria-label="FITLUNA 연습용 상품 페이지 시안">
+              <div class="bar" aria-hidden="true">
+                <i></i><i></i><i></i><span>fitluna-sample · 연습용 시안</span>
+              </div>
+              <div class="shop-hd">
+                <b>FITLUNA</b>
+                <ul aria-hidden="true">
+                  <li>NEW</li>
+                  <li>BEST</li>
+                  <li>스타킹</li>
+                  <li>보정 속옷</li>
+                  <li>액세서리</li>
+                </ul>
+                <div class="icons" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                    stroke-linecap="round"
+                  >
+                    <circle cx="11" cy="11" r="6.5" />
+                    <path d="M20 20l-4.2-4.2" />
+                  </svg>
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M12 20s-7.5-4.6-7.5-10.2A4.2 4.2 0 0 1 12 7.2
+                        a4.2 4.2 0 0 1 7.5 2.6C19.5 15.4 12 20 12 20z"
+                    />
+                  </svg>
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M5 8h14l-1.2 12H6.2z" />
+                    <path d="M9 8a3 3 0 0 1 6 0" />
+                  </svg>
+                </div>
+              </div>
+
+              <!-- ① 입체 배너 -->
+              <div class="spot" id="s1">
+                <a
+                  class="num"
+                  href="#how1"
+                  aria-label="1번 배너를 만든 과정 보기"
+                  >1</a
+                >
+                <div class="depth-banner only-screen" data-depth-banner>
+                  <svg
+                    viewBox="0 0 1376 768"
+                    preserveAspectRatio="xMidYMid slice"
+                    role="img"
+                    aria-label="블랙 스타킹을 신은 다리와 FITLUNA 상자"
+                  >
+                    <defs>
+                      <mask
+                        id="db-near"
+                        maskUnits="userSpaceOnUse"
+                        x="-100"
+                        y="-100"
+                        width="1576"
+                        height="968"
+                      >
+                        <image
+                          href="assets/v3/f6_banner_near.png"
+                          width="1376"
+                          height="768"
+                        />
+                      </mask>
+                    </defs>
+                    <g>
+                      <image
+                        class="db-bg"
+                        href="assets/v3/f6_banner.jpg"
+                        width="1376"
+                        height="768"
+                      />
+                      <g mask="url(#db-near)">
+                        <image
+                          class="db-fg"
+                          href="assets/v3/f6_banner.jpg"
+                          width="1376"
+                          height="768"
+                        />
+                      </g>
+                    </g>
+                  </svg>
+                  <div class="copy">
+                    <small>BLACK LINE</small><b>자연스러운<br />다리 라인</b
+                    ><span>지금 보기</span>
+                  </div>
+                  <p class="hint" aria-hidden="true">
+                    <span class="h-mouse">마우스를 움직여 보세요</span
+                    ><span class="h-touch">좌우로 끌어 보세요</span>
+                  </p>
+                </div>
+                <img
+                  class="only-print"
+                  src="assets/v3/f6_banner.jpg"
+                  alt="블랙 스타킹 배너"
+                />
+              </div>
+
+              <p class="crumb">HOME › 보정 속옷 › 캐미솔</p>
+
+              <!-- ② 색상 옵션 -->
+              <div class="pdp" data-color-option>
+                <div class="spot" id="s2">
+                  <a
+                    class="num"
+                    href="#how2"
+                    aria-label="2번 색상 칩을 만든 과정 보기"
+                    >2</a
+                  >
+                  <div class="co-photo only-screen">
+                    <svg
+                      viewBox="0 0 1000 1000"
+                      role="img"
+                      aria-label="FITLUNA 심리스 캐미솔 상품 사진"
+                    >
+                      <defs>
+                        <mask
+                          id="co-mask"
+                          maskUnits="userSpaceOnUse"
+                          x="0"
+                          y="0"
+                          width="1000"
+                          height="1000"
+                        >
+                          <image
+                            href="assets/v3/camisole_mask.png"
+                            width="1000"
+                            height="1000"
+                          />
+                        </mask>
+                      </defs>
+                      <image
+                        href="assets/v3/06_camisole_fixed.jpg"
+                        width="1000"
+                        height="1000"
+                      />
+                      <rect
+                        class="co-tint"
+                        width="1000"
+                        height="1000"
+                        mask="url(#co-mask)"
+                      />
+                    </svg>
+                    <p class="hint" aria-hidden="true">색상 칩을 눌러 보세요</p>
+                  </div>
+                  <div class="opts4 only-print">
+                    <figure>
+                      <img src="assets/v3/f5_opt0.jpg" alt="" />
+                      <figcaption>누드 베이지</figcaption>
+                    </figure>
+                    <figure>
+                      <img src="assets/v3/f5_opt1.jpg" alt="" />
+                      <figcaption>블러시 핑크</figcaption>
+                    </figure>
+                    <figure>
+                      <img src="assets/v3/f5_opt2.jpg" alt="" />
+                      <figcaption>세이지</figcaption>
+                    </figure>
+                    <figure>
+                      <img src="assets/v3/f5_opt3.jpg" alt="" />
+                      <figcaption>모카</figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="info-col">
+                  <p class="brand">FITLUNA<span class="badge">NEW</span></p>
+                  <h3>심리스 캐미솔</h3>
+                  <p class="price">39,000원</p>
+                  <p class="desc">
+                    사진은 한 장입니다. 색상 칩을 누르면 옷 영역에만 색을
+                    입혀서, 옷 색만 바뀌어 보입니다.
+                  </p>
+                  <fieldset class="co-chips only-screen">
+                    <legend>
+                      색상<b data-picked aria-live="polite">누드 베이지</b>
+                    </legend>
+                    <div class="row">
+                      <label
+                        ><input
+                          type="radio"
+                          name="c"
+                          value="누드 베이지"
+                          checked
+                        /><span style="--c: #d8b59b"></span
+                        ><span class="sr-only">누드 베이지</span></label
+                      >
+                      <label
+                        ><input
+                          type="radio"
+                          name="c"
+                          value="블러시 핑크"
+                          data-tint="#e58fa3"
+                        /><span style="--c: #e58fa3"></span
+                        ><span class="sr-only">블러시 핑크</span></label
+                      >
+                      <label
+                        ><input
+                          type="radio"
+                          name="c"
+                          value="세이지"
+                          data-tint="#7f9c86"
+                        /><span style="--c: #7f9c86"></span
+                        ><span class="sr-only">세이지</span></label
+                      >
+                      <label
+                        ><input
+                          type="radio"
+                          name="c"
+                          value="모카"
+                          data-tint="#6b4a3a"
+                          data-blend="multiply"
+                        /><span style="--c: #6b4a3a"></span
+                        ><span class="sr-only">모카</span></label
+                      >
+                    </div>
+                  </fieldset>
+                  <p class="opt-row"><span>사이즈</span><b>FREE</b></p>
+                  <div class="buy only-screen">
+                    <button type="button" disabled>장바구니</button
+                    ><button type="button" disabled>구매하기</button>
+                  </div>
+                  <p class="buy-note only-screen">
+                    연습용 시안이라 구매 버튼은 동작하지 않습니다.
+                  </p>
+                  <p class="tip">
+                    색은 미리보기용 시뮬레이션입니다. 실제 판매 페이지라면
+                    색상별 촬영본으로 바꿔야 합니다.
+                  </p>
+                </div>
+              </div>
+
+              <!-- ③④ 함께 보면 좋은 상품 -->
+              <div class="more" id="s3">
+                <div class="more-hd">
+                  <h4>함께 보면 좋은 상품</h4>
+                  <p class="hint" aria-hidden="true">
+                    <span class="h-mouse"
+                      >귀걸이 사진에 마우스를 올려 보세요</span
+                    ><span class="h-touch"
+                      >PC에서는 마우스를 올리면 표정이 바뀝니다</span
+                    >
+                  </p>
+                </div>
+                <div class="grid4">
+                  <div class="spot">
+                    <a
+                      class="num"
+                      href="#how3"
+                      aria-label="3번 표정 카드를 만든 과정 보기"
+                      >3</a
+                    >
+                    <a class="pcard" href="#how3"
+                      ><div class="th">
+                        <img
+                          src="assets/v3/f4_orig.jpg"
+                          alt="골드 링 귀걸이 착용 컷"
+                        /><img
+                          class="hover"
+                          src="assets/v3/f4_smile.jpg"
+                          alt=""
+                        /><span class="tag">BEST</span>
+                      </div>
+                      <p class="br">FITLUNA</p>
+                      <p class="nm">골드 링 귀걸이</p>
+                      <p class="pr">29,000원</p></a
+                    >
+                  </div>
+                  <a class="pcard" href="#how3"
+                    ><div class="th">
+                      <img
+                        src="assets/v3/f4_orig.jpg"
+                        alt="골드 링 귀걸이 착용 컷"
+                      /><img class="hover" src="assets/v3/f4_turn.jpg" alt="" />
+                    </div>
+                    <p class="br">FITLUNA</p>
+                    <p class="nm">골드 링 귀걸이 (옆모습)</p>
+                    <p class="pr">29,000원</p></a
+                  >
+                  <div class="spot">
+                    <a
+                      class="num"
+                      href="#how4"
+                      aria-label="4번 배경 맞춘 목록을 만든 과정 보기"
+                      >4</a
+                    >
+                    <a class="pcard" href="#how4"
+                      ><div class="th">
+                        <img src="assets/v3/f2_1.png" alt="블랙 스타킹" />
+                      </div>
+                      <p class="br">FITLUNA</p>
+                      <p class="nm">블랙 스타킹</p>
+                      <p class="pr">12,000원</p></a
+                    >
+                  </div>
+                  <a class="pcard" href="#how4"
+                    ><div class="th">
+                      <img src="assets/v3/f2_3.png" alt="블랙 레깅스" /><span
+                        class="tag"
+                        >NEW</span
+                      >
+                    </div>
+                    <p class="br">FITLUNA</p>
+                    <p class="nm">블랙 레깅스</p>
+                    <p class="pr">32,000원</p></a
+                  >
+                </div>
+              </div>
+              <!-- ⑤ 사이즈 가이드 -->
+              <div class="size spot" id="s5" data-size-guide>
+                <a
+                  class="num"
+                  href="#how5"
+                  aria-label="5번 사이즈 가이드를 만든 과정 보기"
+                  >5</a
+                >
+                <div class="size-hd">
+                  <h4>사이즈 가이드</h4>
+                  <p class="hint" aria-hidden="true">
+                    가운데 막대를 좌우로 끌어 보세요
+                  </p>
+                </div>
+                <div class="sg">
+                  <div class="cmp">
+                    <svg
+                      class="cmp-photo"
+                      viewBox="0 0 1000 1000"
+                      aria-hidden="true"
+                    >
+                      <image
+                        href="assets/v3/06_camisole_fixed.jpg"
+                        width="1000"
+                        height="1000"
+                      />
+                    </svg>
+                    <svg
+                      class="cmp-line"
+                      viewBox="0 0 1000 1000"
+                      role="img"
+                      aria-label="심리스 캐미솔 선 그림"
+                    >
+                      <defs>
+                        <filter
+                          id="sg-grow"
+                          x="-5%"
+                          y="-5%"
+                          width="110%"
+                          height="110%"
+                        >
+                          <feMorphology operator="dilate" radius="10" />
+                        </filter>
+                        <mask
+                          id="sg-mask"
+                          maskUnits="userSpaceOnUse"
+                          x="0"
+                          y="0"
+                          width="1000"
+                          height="1000"
+                        >
+                          <image
+                            href="assets/v3/camisole_mask.png"
+                            width="1000"
+                            height="1000"
+                            filter="url(#sg-grow)"
+                          />
+                        </mask>
+                        <filter id="sg-ink" color-interpolation-filters="sRGB">
+                          <feColorMatrix
+                            type="matrix"
+                            values="0 0 0 0 .1  0 0 0 0 .09  0 0 0 0 .08  1.8 0 0 0 0"
+                          />
+                        </filter>
+                      </defs>
+                      <rect width="1000" height="1000" fill="#fff" />
+                      <g mask="url(#sg-mask)">
+                        <image
+                          href="assets/v3/f7_line.jpg"
+                          width="1000"
+                          height="1000"
+                          filter="url(#sg-ink)"
+                        />
+                      </g>
+                    </svg>
+                    <svg
+                      class="dims"
+                      viewBox="0 0 1000 1000"
+                      aria-hidden="true"
+                    >
+                      <g class="dim-A">
+                        <line x1="565" y1="84" x2="565" y2="707" />
+                        <line x1="545" y1="84" x2="585" y2="84" />
+                        <line x1="545" y1="707" x2="585" y2="707" />
+                        <circle cx="565" cy="395" r="22" />
+                        <text x="565" y="396">A</text>
+                      </g>
+                      <g class="dim-B">
+                        <line x1="173" y1="330" x2="455" y2="330" />
+                        <circle cx="314" cy="330" r="22" />
+                        <text x="314" y="331">B</text>
+                      </g>
+                      <g class="dim-C">
+                        <line x1="196" y1="445" x2="431" y2="445" />
+                        <circle cx="314" cy="445" r="22" />
+                        <text x="314" y="446">C</text>
+                      </g>
+                      <g class="dim-D">
+                        <line x1="136" y1="670" x2="491" y2="670" />
+                        <circle cx="314" cy="670" r="22" />
+                        <text x="314" y="671">D</text>
+                      </g>
+                    </svg>
+                    <span class="lab l">선 그림</span
+                    ><span class="lab r">사진</span>
+                    <input
+                      class="only-screen"
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="50"
+                      aria-label="선 그림과 사진 비교. 값이 클수록 선 그림이 넓게 보임"
+                    />
+                    <span class="bar-line" aria-hidden="true"></span>
+                  </div>
+                  <div>
+                    <table class="sg-table">
+                      <caption>
+                        FREE 사이즈 · 예시 치수(cm)
+                      </caption>
+                      <tbody>
+                        <tr>
+                          <th scope="row">
+                            <button type="button" data-dim="A">
+                              <i>A</i>총장 (어깨끈 포함)
+                            </button>
+                          </th>
+                          <td>56</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <button type="button" data-dim="B">
+                              <i>B</i>가슴 단면
+                            </button>
+                          </th>
+                          <td>25</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <button type="button" data-dim="C">
+                              <i>C</i>허리 단면
+                            </button>
+                          </th>
+                          <td>21</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <button type="button" data-dim="D">
+                              <i>D</i>밑단 단면
+                            </button>
+                          </th>
+                          <td>32</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <p class="sg-note">
+                      항목을 가리키면 그림의 치수선이 강조됩니다. 치수는 화면
+                      구성을 위한 예시값입니다.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <p class="mock-note">
+                이미지 속 FITLUNA는 연습용으로 정한 샘플 브랜드이고, 가격은
+                예시입니다. AI 이미지는 실물 사진이 오기 전까지 쓰는 임시
+                이미지입니다.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 04 만든 과정 -->
+        <section class="sec" id="how">
+          <header class="sec-hd">
+            <span class="no">04</span>
+            <div>
+              <small>HOW IT WAS MADE</small>
+              <h2>만든 과정</h2>
+            </div>
+          </header>
+          <div class="sub">
+            <div class="sub-hd">
+              <p>
+                다섯 곳 모두 같은 순서로 했습니다. 채팅형 AI처럼 다시 부탁할
+                필요 없이, ComfyUI는 내 컴퓨터에서 값만 바꿔 몇 번이든 무료로
+                다시 돌릴 수 있었습니다. 각 과정 맨 위에 그 기능이 무엇인지 먼저
+                적었습니다.
+              </p>
+            </div>
+            <div class="steps3">
+              <div>
+                <small>STEP 1 · COMFYUI</small><b>템플릿을 고르고 값을 바꿈</b>
+                <p>코딩 없이, 유료 표시(👑, API)가 없는 무료 템플릿만</p>
+              </div>
+              <div>
+                <small>STEP 2 · CHECK</small><b>결과를 확대해서 확인</b>
+                <p>원본과 나란히 놓고 달라진 곳을 찾음</p>
+              </div>
+              <div>
+                <small>STEP 3 · SCREEN</small><b>화면에 붙이고 마무리</b>
+                <p>HTML, CSS, JS로 화면에 구현</p>
+              </div>
+            </div>
+          </div>
+
+          <article class="how card" id="how1">
+            <div class="how-hd">
+              <h3>
+                <span class="num">1</span>마우스를 따라 다리가 움직이는 배너
+              </h3>
+              <p class="meta">
+                <span>깊이 추정 · 한 장 4초</span><span>SVG mask</span
+                ><span>JavaScript</span>
+              </p>
+            </div>
+            <div class="what">
+              <b>이 기능은?</b>
+              <p>
+                <b>깊이 추정</b>은 사진 한 장을 보고 AI가 "무엇이 카메라에
+                가깝고 무엇이 먼지"를 짐작해, 가까울수록 희게 칠한 흑백 그림으로
+                돌려주는 기능입니다. 이 흑백 그림을 <b>깊이 지도</b>라고
+                부릅니다. ComfyUI에 기본으로 들어 있는 "뎁스 추정" 템플릿으로
+                바로 쓸 수 있었습니다.
+              </p>
+            </div>
+            <div class="body">
+              <div>
+                <div class="pins">
+                  <img
+                    src="assets/v3/cap_f6.jpg"
+                    alt="ComfyUI 깊이 추정 실행 화면"
+                  /><span class="num" style="left: 12%; top: 24%">1</span
+                  ><span class="num" style="left: 61%; top: 14.5%">2</span
+                  ><span class="num" style="left: 82%; top: 58%">3</span>
+                </div>
+                <p class="capnote">
+                  실제 실행 화면 · ① 메인 배너 사진을 넣는 곳 ② 해상도: 깊이
+                  지도를 얼마나 촘촘하게 그릴지 정하는 값 ③ 결과로 나온 깊이
+                  지도
+                </p>
+                <div class="pair">
+                  <figure class="ng">
+                    <img src="assets/v3/f6_try1.jpg" alt="" />
+                    <figcaption>1차 · 테두리가 두 겹</figcaption>
+                  </figure>
+                  <figure>
+                    <img src="assets/v3/f6_try2.jpg" alt="" />
+                    <figcaption>2차 · 깨끗하지만 너무 조금 움직임</figcaption>
+                  </figure>
+                </div>
+                <p class="pair-label">
+                  지금 · 마우스를 왼쪽 끝과 오른쪽 끝에 뒀을 때 (상자와 배경은
+                  그대로)
+                </p>
+                <div class="pair">
+                  <figure class="ok">
+                    <img src="assets/v3/f6_try3_l.jpg" alt="" />
+                    <figcaption>왼쪽</figcaption>
+                  </figure>
+                  <figure class="ok">
+                    <img src="assets/v3/f6_try3_r.jpg" alt="" />
+                    <figcaption>오른쪽</figcaption>
+                  </figure>
+                </div>
+              </div>
+              <dl class="facts">
+                <div>
+                  <dt>하려던 것</dt>
+                  <dd>
+                    멈춰 있는 메인 배너에서 다리만 살짝 움직여 입체감 주기
+                  </dd>
+                </div>
+                <div>
+                  <dt>ComfyUI</dt>
+                  <dd>
+                    "뎁스 추정" 템플릿에 배너 사진을 넣고 실행. 나온 깊이
+                    지도에서 다리와 상자가 배경보다 하얗게(가깝게)
+                    <b>깔끔하게 나뉨</b>
+                  </dd>
+                </div>
+                <div>
+                  <dt>화면</dt>
+                  <dd>
+                    <ol>
+                      <li>
+                        깊이 지도 값을 그대로 써서 많이 움직였더니
+                        <b>다리 테두리가 두 겹으로 갈라짐</b>
+                      </li>
+                      <li>
+                        깊이 지도를 흐리게 읽고 폭을 줄였더니 깨끗했지만,
+                        <b>움직임이 너무 작아 잘 안 보임</b>
+                      </li>
+                      <li>
+                        깊이 지도에서 <b>다리만 골라 둘레까지 넓힌 영역</b>을 한
+                        덩어리로 움직임. 폭을 네 배 넘게 키워도 갈라지지 않음
+                      </li>
+                      <li>
+                        처음엔 WebGL(그래픽 카드로 그림을 그리는 웹 기술)로
+                        사진을 직접 읽었는데, 파일을 더블클릭해 열면 브라우저
+                        보안 때문에 멈춤. 그래서 다리 영역을 흑백 그림으로 한 번
+                        저장해 두고,
+                        <b
+                          >같은 사진 두 장을 SVG(웹에서 쓰는 그림 형식)로 겹쳐
+                          다리 쪽 장만 움직이게</b
+                        >
+                        바꿈. 상자와 배경은 그대로이고, 어디서 열어도 움직임
+                      </li>
+                    </ol>
+                  </dd>
+                </div>
+              </dl>
+            </div>
+            <div class="code">
+              <p class="code-hd">
+                <b>KEY CODE</b
+                ><span
+                  >ComfyUI_포트폴리오_v2.html · js/depth-banner.js (일부)</span
+                >
+              </p>
+              <pre><code><span class="c">&lt;!-- 같은 사진 두 장: 아래는 고정, 위는 다리 영역만 표시 --&gt;</span>
+&lt;mask id=<span class="s">"db-near"</span>&gt;
+  &lt;image href=<span class="s">"assets/v3/f6_banner_near.png"</span>/&gt;
+&lt;/mask&gt;
+
+&lt;image
+  class=<span class="s">"db-bg"</span>
+  href=<span class="s">"assets/v3/f6_banner.jpg"</span>
+/&gt;
+
+&lt;g mask=<span class="s">"url(#db-near)"</span>&gt;
+  &lt;image
+    class=<span class="s">"db-fg"</span>
+    href=<span class="s">"assets/v3/f6_banner.jpg"</span>
+  /&gt;
+&lt;/g&gt;</code></pre>
+              <pre><code><span class="c">// 상자 모서리가 보이지 않는 최대 이동 거리</span>
+<span class="k">const</span> MAX_MOVE_X = 20;
+
+<span class="k">function</span> moveForeground(position) {
+  <span class="k">const</span> distance = position * MAX_MOVE_X;
+  foreground.setAttribute(
+    <span class="s">'transform'</span>,
+    <span class="s">`translate(${distance} 0)`</span>,
+  );
+}
+
+banner.addEventListener(<span class="s">'pointermove'</span>, (event) =&gt; {
+  <span class="k">const</span> bannerRect = banner.getBoundingClientRect();
+  targetPosition =
+    ((event.clientX - bannerRect.left) / bannerRect.width) * 2 - 1;
+});</code></pre>
+            </div>
+            <p class="judge">
+              채팅형 AI는 완성된 이미지 한 장을 주지만, ComfyUI는 깊이 지도 같은
+              화면 재료를 따로 줍니다. 화면 효과를 만드는 데는 이쪽이
+              맞았습니다.
+            </p>
+          </article>
+
+          <article class="how card" id="how2">
+            <div class="how-hd">
+              <h3><span class="num">2</span>색상 칩 미리보기</h3>
+              <p class="meta">
+                <span>단어로 골라내기 · 첫 실행 31초, 두 번째 12초</span
+                ><span>SVG mask</span><span>mix-blend-mode</span>
+              </p>
+            </div>
+            <div class="what">
+              <b>이 기능은?</b>
+              <p>
+                영어 단어를 적으면 AI가 사진에서 그 물건이 있는 자리만 찾아
+                <b>흰색으로 칠한 흑백 그림</b>을 돌려주는 기능입니다. 이렇게
+                "남길 부분만 흰색"인 그림을 <b>마스크</b>라고 부르고, 사진을
+                물건별로 나누는 일을 <b>세그멘테이션</b>이라고 합니다.
+              </p>
+            </div>
+            <div class="body">
+              <div>
+                <div class="pins">
+                  <img
+                    src="assets/v3/cap_f5.jpg"
+                    alt="ComfyUI 단어로 골라내기 실행 화면"
+                  /><span class="num" style="left: 37%; top: 29%">1</span
+                  ><span class="num" style="left: 57%; top: 20%">2</span
+                  ><span class="num" style="left: 93%; top: 20%">3</span>
+                </div>
+                <p class="capnote">
+                  실제 실행 화면 · ① 찾을 물건을 영어로 적는 칸
+                  (<code>camisole</code>) ② 옷 자리만 흰색인 마스크 ③ 옷만 떼어
+                  낸 이미지
+                </p>
+                <div class="pair">
+                  <figure class="ng contain dark">
+                    <img src="assets/v3/f1_mask.jpg" alt="" />
+                    <figcaption>처음 시도 · 상자까지 남음</figcaption>
+                  </figure>
+                  <figure class="ok contain dark">
+                    <img src="assets/v3/f5_mask_cami.jpg" alt="" />
+                    <figcaption>camisole · 옷만</figcaption>
+                  </figure>
+                </div>
+              </div>
+              <dl class="facts">
+                <div>
+                  <dt>하려던 것</dt>
+                  <dd>사진 한 장으로 색상 옵션 4가지 보여 주기</dd>
+                </div>
+                <div>
+                  <dt>처음 시도</dt>
+                  <dd>
+                    먼저 써 본 배경 지우기(④번)의 마스크를 쓰려 했는데, 배경만
+                    빼고 다 남기는 기능이라 <b>상자까지 같이 남아서</b> 옷 색만
+                    바꿀 수 없었음
+                  </dd>
+                </div>
+                <div>
+                  <dt>ComfyUI</dt>
+                  <dd>
+                    단어로 골라내는 템플릿으로 바꾸고
+                    <code>camisole</code>(캐미솔)을 입력. <code>box</code>로
+                    바꾸면 상자만 골라짐
+                  </dd>
+                </div>
+                <div>
+                  <dt>화면</dt>
+                  <dd>
+                    옷 마스크를 SVG 안에서 "이 모양 안에만 칠하기"로 쓰고, 그
+                    위에 색을 <code>mix-blend-mode</code>(포토샵의 레이어 혼합
+                    모드 같은 CSS 기능)로 섞음. 그래서 주름과 그림자는 그대로
+                    두고 색만 바뀜. 처음엔 CSS <code>mask</code>로 했는데 파일을
+                    더블클릭해 열면 브라우저 보안 때문에 막혀서, 어디서 열어도
+                    되는 SVG 방식으로 바꿈
+                  </dd>
+                </div>
+              </dl>
+            </div>
+            <div class="code">
+              <p class="code-hd">
+                <b>KEY CODE</b
+                ><span
+                  >ComfyUI_포트폴리오_v2.html · css/demos.css ·
+                  js/color-options.js (일부)</span
+                >
+              </p>
+              <pre><code><span class="c">&lt;!-- 옷 마스크 안에만 색상 표시 --&gt;</span>
+&lt;mask id=<span class="s">"co-mask"</span>&gt;
+  &lt;image href=<span class="s">"assets/v3/camisole_mask.png"</span>/&gt;
+&lt;/mask&gt;
+
+&lt;image href=<span class="s">"assets/v3/06_camisole_fixed.jpg"</span>/&gt;
+&lt;rect
+  class=<span class="s">"co-tint"</span>
+  mask=<span class="s">"url(#co-mask)"</span>
+/&gt;</code></pre>
+              <pre><code>.co-tint {
+  <span class="k">fill</span>: var(--tint, transparent);
+  <span class="k">mix-blend-mode</span>: var(--blend, color);
+}</code></pre>
+              <pre><code><span class="c">// 칩을 고르면 CSS 변수만 바꾼다. 어두운 모카는 multiply로 섞는다.</span>
+box.style.setProperty(
+  <span class="s">'--tint'</span>,
+  radio.dataset.tint || <span class="s">'transparent'</span>,
+);
+box.style.setProperty(
+  <span class="s">'--blend'</span>,
+  radio.dataset.blend || <span class="s">'color'</span>,
+);</code></pre>
+            </div>
+            <p class="judge">
+              AI 실행은 한 번이면 색을 몇 개 더 넣어도 다시 돌리지 않습니다.
+              채팅형 AI라면 색마다 요청을 한 번씩 해야 합니다. 다만 색은
+              시뮬레이션이라 판매 컷은 촬영본으로 바꿔야 합니다.
+            </p>
+          </article>
+
+          <article class="how card" id="how3">
+            <div class="how-hd">
+              <h3><span class="num">3</span>표정이 바뀌는 상품 카드</h3>
+              <p class="meta">
+                <span>표정 바꾸기 · 첫 실행 34초, 다음부터 1.8초</span
+                ><span>커스텀 노드</span><span>CSS :hover</span>
+              </p>
+            </div>
+            <div class="what">
+              <b>이 기능은?</b>
+              <p>
+                얼굴 사진 한 장에서
+                <b>웃는 정도, 윙크, 고개 각도를 숫자로 조절</b>해 표정을 바꿔
+                주는 기능입니다. ComfyUI에 기본으로 들어 있지 않은 기능이라
+                <b>커스텀 노드</b>(다른 사람이 만들어 공개한 추가 상자)로 받아
+                설치했습니다.
+              </p>
+            </div>
+            <div class="body">
+              <div>
+                <div class="pins">
+                  <img
+                    src="assets/v3/cap_f4.jpg"
+                    alt="ComfyUI 표정 편집 실행 화면"
+                  /><span class="num" style="left: 3.5%; top: 25%">1</span
+                  ><span class="num" style="left: 63.5%; top: 43%">2</span
+                  ><span class="num" style="left: 84%; top: 16%">3</span>
+                </div>
+                <p class="capnote">
+                  실제 실행 화면 · ① Gemini로 만든 무표정 모델 사진 ② 표정 숫자
+                  (<code>rotate_yaw 15</code>는 고개를 옆으로 15만큼) ③ 바뀐
+                  얼굴
+                </p>
+                <div class="pair">
+                  <figure class="ok">
+                    <img src="assets/v3/f4_ear_orig.jpg" alt="" />
+                    <figcaption>원본 귀걸이</figcaption>
+                  </figure>
+                  <figure class="ng">
+                    <img src="assets/v3/f4_ear_smile.jpg" alt="" />
+                    <figcaption>미소 컷 · 링이 휨</figcaption>
+                  </figure>
+                </div>
+              </div>
+              <dl class="facts">
+                <div>
+                  <dt>하려던 것</dt>
+                  <dd>귀걸이 상품 카드에 표정이 다른 컷 넣기</dd>
+                </div>
+                <div>
+                  <dt>ComfyUI</dt>
+                  <dd>
+                    ComfyUI 안의 "커스텀 노드 관리자"에서 검색해 설치. 처음 찾은
+                    것은 엔비디아 그래픽카드 전용이라
+                    <b>맥에서 도는 버전을 찾아 설치</b>. 숫자 3개만 바꿔 3컷:
+                    <code>smile</code>(미소) <code>wink</code>(윙크)
+                    <code>rotate_yaw</code>(고개 돌리기)
+                  </dd>
+                </div>
+                <div>
+                  <dt>확인</dt>
+                  <dd>
+                    표정은 자연스러웠지만 확대해 보니 <b>귀걸이 링 모양이 휨</b>
+                  </dd>
+                </div>
+                <div>
+                  <dt>화면</dt>
+                  <dd>
+                    기본은 원본 사진, 마우스를 올렸을 때만 웃는 컷으로 바뀜
+                  </dd>
+                </div>
+              </dl>
+            </div>
+            <div class="code">
+              <p class="code-hd">
+                <b>KEY CODE</b><span>css/page.css (일부)</span>
+              </p>
+              <pre><code><span class="c">/* 기본 사진 위에 표정이 다른 사진 배치 */</span>
+.pcard .th .hover {
+  <span class="k">opacity</span>: 0;
+}
+
+.pcard:hover .hover,
+.pcard:focus-visible .hover {
+  <span class="k">opacity</span>: 1;
+}
+
+<span class="c">/* 휴대폰용 안내 문구 표시 */</span>
+@media (hover: none) {
+  .h-mouse {
+    <span class="k">display</span>: none;
+  }
+
+  .h-touch {
+    <span class="k">display</span>: inline;
+  }
+}</code></pre>
+            </div>
+            <p class="judge">
+              상품 모양이 바뀌어 판매용 사진으로는 못 쓰고, 마우스를 올릴 때만
+              보이는 연출 컷으로 썼습니다.
+            </p>
+          </article>
+
+          <article class="how card" id="how4">
+            <div class="how-hd">
+              <h3><span class="num">4</span>배경을 지워 맞춘 목록</h3>
+              <p class="meta">
+                <span>배경 지우기 · 한 장 40초, 4장 장당 1분 미만</span
+                ><span>투명 PNG</span><span>CSS</span>
+              </p>
+            </div>
+            <div class="what">
+              <b>이 기능은?</b>
+              <p>
+                사진에서
+                <b>상품은 남기고 배경만 투명하게 지워 주는</b> 기능입니다.
+                결과는 배경이 비어 있는 PNG 파일로 나와서, 웹페이지에서 원하는
+                배경색 위에 올릴 수 있습니다. ComfyUI 기본 템플릿 "배경 제거"로
+                썼습니다.
+              </p>
+            </div>
+            <div class="body">
+              <div>
+                <div class="pins">
+                  <img
+                    src="assets/v3/cap_f1.jpg"
+                    alt="ComfyUI 배경 제거 실행 화면"
+                  /><span class="num" style="left: 40%; top: 8%">1</span
+                  ><span class="num" style="left: 69%; top: 50%">2</span>
+                </div>
+                <p class="capnote">
+                  실제 실행 화면 · ① 무료 배경 제거 템플릿 ② 배경이 지워진 결과
+                </p>
+                <div class="pair">
+                  <figure>
+                    <img src="assets/v3/before_camisole.jpg" alt="" />
+                    <figcaption>원래 사진 · 돌 바닥 배경</figcaption>
+                  </figure>
+                  <figure class="beige">
+                    <img src="assets/v3/f2_2.png" alt="" />
+                    <figcaption>배경 지운 뒤</figcaption>
+                  </figure>
+                </div>
+              </div>
+              <dl class="facts">
+                <div>
+                  <dt>하려던 것</dt>
+                  <dd>
+                    배경이 제각각인(거실, 돌 바닥, 헬스장) 상품 사진 목록을 같은
+                    배경으로 맞추기
+                  </dd>
+                </div>
+                <div>
+                  <dt>ComfyUI</dt>
+                  <dd>
+                    목록에서 👑(유료)가 붙은 템플릿 대신 표시가 없는 무료
+                    템플릿을 고름. 작업 순서(워크플로)를 저장해 두고
+                    <b>사진만 바꿔 4장</b> 실행
+                  </dd>
+                </div>
+                <div>
+                  <dt>확인</dt>
+                  <dd>
+                    배경은 맞았지만 찍은 구도 차이는 남음. 분홍 배경과 색이
+                    비슷한 <b>분홍 상자 하나는 배경으로 보고 같이 지워짐</b>.
+                    처음엔 흑백 마스크 쪽을 저장하는 실수도 함
+                  </dd>
+                </div>
+                <div>
+                  <dt>화면</dt>
+                  <dd>
+                    배경 없는 이미지를 넣고 카드 배경색은 CSS 한 줄로 통일
+                  </dd>
+                </div>
+              </dl>
+            </div>
+            <div class="code">
+              <p class="code-hd">
+                <b>KEY CODE</b><span>css/page.css (일부)</span>
+              </p>
+              <pre><code><span class="c">/* 배경을 지운 PNG 아래에 같은 색을 깔아서 목록 배경을 통일 */</span>
+.pcard .th {
+  <span class="k">aspect-ratio</span>: 3 / 4;
+  <span class="k">background</span>: #f1ebe4;
+}</code></pre>
+            </div>
+            <p class="judge">
+              배경만 맞출 땐 빠르고 원본을 안 건드려서 좋았습니다. 다만 앉은
+              다리, 바닥에 놓은 옷 같은 구도 차이는 그대로 남았습니다.
+            </p>
+          </article>
+          <article class="how card" id="how5">
+            <div class="how-hd">
+              <h3><span class="num">5</span>선 그림으로 만든 사이즈 가이드</h3>
+              <p class="meta">
+                <span>라인아트 · 첫 실행 10.5초, 값 바꿔 1.0초</span
+                ><span>커스텀 노드</span><span>SVG filter</span
+                ><span>input range</span>
+              </p>
+            </div>
+            <div class="what">
+              <b>이 기능은?</b>
+              <p>
+                <b>라인아트</b>는 사진을 보고 AI가 윤곽과 봉제선을 찾아
+                <b>선 그림</b>으로 바꿔 주는 기능입니다. 결과는 검은 바탕에 흰
+                선으로 나옵니다. ComfyUI에 기본으로 들어 있지 않아, 무료 커스텀
+                노드 묶음 <code>comfyui_controlnet_aux</code>를 설치해 그 안의
+                "Realistic Lineart" 상자를 썼습니다.
+              </p>
+            </div>
+            <div class="body">
+              <div>
+                <div class="pins">
+                  <img
+                    src="assets/v3/cap_f7.jpg"
+                    alt="ComfyUI 라인아트 실행 화면"
+                  /><span class="num" style="left: 13%; top: 64%">1</span
+                  ><span class="num" style="left: 46%; top: 22%">2</span
+                  ><span class="num" style="left: 81%; top: 58%">3</span>
+                </div>
+                <p class="capnote">
+                  실제 실행 화면 · ① 2번과 같은 캐미솔 사진 ②
+                  <code>coarse</code>: 굵은 윤곽 위주로 그릴지 정하는 값 ③
+                  결과로 나온 선 그림 (상자 위의
+                  <code>comfyui_controlnet_aux</code>는 설치한 커스텀 노드 이름)
+                </p>
+                <div class="pair">
+                  <figure class="contain dark">
+                    <img src="assets/v3/f7_fine.jpg" alt="" />
+                    <figcaption>coarse 끔 · 봉제선까지</figcaption>
+                  </figure>
+                  <figure class="ok contain dark">
+                    <img src="assets/v3/f7_coarse.jpg" alt="" />
+                    <figcaption>coarse 켬 · 윤곽 위주</figcaption>
+                  </figure>
+                </div>
+              </div>
+              <dl class="facts">
+                <div>
+                  <dt>하려던 것</dt>
+                  <dd>
+                    상품 사진 한 장으로 상세 페이지의 사이즈 가이드 도식 만들기
+                  </dd>
+                </div>
+                <div>
+                  <dt>ComfyUI</dt>
+                  <dd>
+                    "커스텀 노드 관리자"에서
+                    <code>comfyui_controlnet_aux</code>를 설치하고 다시 시작.
+                    사진을 넣고 실행한 뒤 <code>coarse</code> 값만 바꿔 두 번
+                    뽑아 비교 → <b>윤곽이 깔끔한 coarse 켬</b>을 고름
+                  </dd>
+                </div>
+                <div>
+                  <dt>확인</dt>
+                  <dd>
+                    옷 선은 깔끔했지만
+                    <b>옆에 있던 상자와 FITLUNA 글자까지 선으로 그려짐</b>
+                  </dd>
+                </div>
+                <div>
+                  <dt>화면</dt>
+                  <dd>
+                    <ol>
+                      <li>
+                        2번 색상 칩에 쓴 <b>옷 마스크를 다시 써서</b> 옷 선만
+                        남김. 마스크를 SVG 필터로 조금 넓혀 옷 테두리 선이
+                        잘리지 않게 함
+                      </li>
+                      <li>
+                        검은 바탕의 흰 선을 SVG
+                        필터(<code>feColorMatrix</code>)로
+                        <b>흰 바탕의 진한 선</b>으로 바꿈
+                      </li>
+                      <li>
+                        사진 위에 겹치고, 가운데 막대(<code>input range</code
+                        >)를 끌면 선 그림과 사진이 바뀌어 보이게 함. 키보드
+                        방향키로도 움직임
+                      </li>
+                      <li>
+                        치수 표 항목을 가리키면 그림의 해당 치수선이 강조됨
+                      </li>
+                    </ol>
+                  </dd>
+                </div>
+              </dl>
+            </div>
+            <div class="code">
+              <p class="code-hd">
+                <b>KEY CODE</b
+                ><span
+                  >ComfyUI_포트폴리오_v2.html · css/page.css · js/size-guide.js
+                  (일부)</span
+                >
+              </p>
+              <pre><code><span class="c">&lt;!-- 옷 마스크를 넓혀 옷 선만 남기고 선 색상 변경 --&gt;</span>
+&lt;filter id=<span class="s">"sg-grow"</span>&gt;
+  &lt;feMorphology operator=<span class="s">"dilate"</span> radius=<span class="s">"10"</span>/&gt;
+&lt;/filter&gt;
+
+&lt;mask id=<span class="s">"sg-mask"</span>&gt;
+  &lt;image
+    href=<span class="s">"assets/v3/camisole_mask.png"</span>
+    filter=<span class="s">"url(#sg-grow)"</span>
+  /&gt;
+&lt;/mask&gt;
+
+&lt;filter id=<span class="s">"sg-ink"</span>&gt;
+  &lt;feColorMatrix
+    type=<span class="s">"matrix"</span>
+    values=<span class="s">"0 0 0 0 .1  0 0 0 0 .09  0 0 0 0 .08  1.8 0 0 0 0"</span>
+  /&gt;
+&lt;/filter&gt;
+
+&lt;g mask=<span class="s">"url(#sg-mask)"</span>&gt;
+  &lt;image
+    href=<span class="s">"assets/v3/f7_line.jpg"</span>
+    filter=<span class="s">"url(#sg-ink)"</span>
+  /&gt;
+&lt;/g&gt;</code></pre>
+              <pre><code><span class="c">/* 막대 왼쪽만 선 그림이 보이게 잘라 냄 */</span>
+.cmp .cmp-line {
+  <span class="k">clip-path</span>: inset(0 calc(100% - var(--pos)) 0 0);
+}</code></pre>
+              <pre><code>range.addEventListener(<span class="s">'input'</span>, () =&gt; {
+  compareBox.style.setProperty(
+    <span class="s">'--pos'</span>,
+    <span class="s">`${range.value}%`</span>,
+  );
+});</code></pre>
+            </div>
+            <p class="judge">
+              선 그림이 치수를 재 주지는 않아서 숫자는 직접 넣어야 합니다(이번
+              화면의 치수는 예시값). 대신 도식을 따로 그리지 않아도 사진과 같은
+              모양의 선 그림을 바로 얻을 수 있었고, 2번에서 만든 마스크도 다시
+              쓸 수 있었습니다.
+            </p>
+          </article>
+
+          <p class="also">
+            <b>그 밖에 해 본 것 · 사진 크게 키우기 (약 2분)</b> 작은 사진을 크게
+            키우면서 흐린 부분을 AI가 채워 선명하게 만드는 기능입니다. 300px
+            작은 사진을 2배로 키워 봤더니, 큰 글자는 또렷해졌지만 이미 뭉개진
+            작은 글자는 되살리지 못했습니다. 그래서 작은 글자는 이미지가 아니라
+            웹페이지 글자로 넣기로 했습니다.
+          </p>
+        </section>
+
+        <!-- 05 문제 해결 -->
+        <section class="sec page" id="issue">
+          <header class="sec-hd">
+            <span class="no">05</span>
+            <div>
+              <small>TROUBLESHOOTING</small>
+              <h2>문제 해결</h2>
+            </div>
+          </header>
+          <div class="sub">
+            <div class="sub-hd">
+              <h3>화면에 붙이면서 막힌 곳과 해결한 방법</h3>
+            </div>
+            <div class="issues card">
+              <table>
+                <caption class="sr-only">
+                  구현 중 생긴 문제와 해결 방법
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col">문제</th>
+                    <th scope="col">원인</th>
+                    <th scope="col">해결</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-l="문제">
+                      파일을 더블클릭해 열면 배너가 멈춤<small>① 배너</small>
+                    </td>
+                    <td data-l="원인">
+                      WebGL이 내 컴퓨터 파일(file://)의 사진을 읽는 것을
+                      브라우저가 보안상 막음
+                    </td>
+                    <td data-l="해결">
+                      다리 영역을 흑백 PNG로 미리 저장하고, 같은 사진 두 장을
+                      SVG로 겹쳐 위 장만 움직임
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-l="문제">
+                      배너를 움직이면 상자 모서리가 같이 끌려옴<small
+                        >① 배너</small
+                      >
+                    </td>
+                    <td data-l="원인">
+                      다리 영역을 둘레까지 넓혀 둔 탓에 상자와 가까워져, 28px
+                      움직이면 상자 모서리가 다리 쪽 장에 같이 딸려 옴
+                    </td>
+                    <td data-l="해결">
+                      이동 폭을 20px로 줄임 (<code>MOVE = 20</code>)
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-l="문제">
+                      파일로 열면 색상 칩을 눌러도 색이 안 바뀜<small
+                        >② 색상 칩</small
+                      >
+                    </td>
+                    <td data-l="원인">
+                      CSS <code>mask-image</code>도 file://에서는 마스크
+                      이미지를 읽지 못함
+                    </td>
+                    <td data-l="해결">
+                      SVG <code>&lt;mask&gt;</code> 안에 마스크 이미지를 넣고
+                      색은 <code>mix-blend-mode</code>로 섞음
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-l="문제">
+                      휴대폰에서는 "마우스를 올려 보세요"가 맞지 않음<small
+                        >①③ 안내 문구</small
+                      >
+                    </td>
+                    <td data-l="원인">
+                      휴대폰에는 마우스 올리기(hover)가 없음
+                    </td>
+                    <td data-l="해결">
+                      <code>@media (hover: none)</code>일 때 "좌우로 끌어
+                      보세요", "PC에서 마우스를 올려 보세요"로 바꿔 보여 줌
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-l="문제">
+                      선 그림에 옆의 상자와 글자까지 그려짐<small
+                        >⑤ 사이즈 가이드</small
+                      >
+                    </td>
+                    <td data-l="원인">
+                      라인아트는 사진 속 윤곽을 모두 선으로 그림
+                    </td>
+                    <td data-l="해결">
+                      2번 색상 칩에 쓴 옷 마스크를 SVG
+                      <code>&lt;mask&gt;</code>로 다시 써서 옷 선만 남김
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="sub">
+            <div class="sub-hd"><h3>함께 지킨 것</h3></div>
+            <ul class="checks">
+              <li>
+                <b>시맨틱 마크업</b>header, nav, main, section, article, table로
+                구조를 나눔
+              </li>
+              <li>
+                <b>키보드 사용</b>색상 칩(radio)과 비교 막대(range)는 Tab과
+                방향키로도 조작할 수 있음
+              </li>
+              <li>
+                <b>대체 텍스트</b>사진에는 alt, 움직이는 배너와 상품
+                사진(SVG)에는 aria-label
+              </li>
+              <li>
+                <b>동작 줄이기</b>기기에서 '동작 줄이기'를 켜면 배너가 움직이지
+                않음
+              </li>
+              <li>
+                <b>반응형</b>860px 이하에서 한 줄 배치, 390px 폭에서 가로 넘침
+                없음 확인
+              </li>
+              <li>
+                <b>파일로 열기 · 인쇄</b>웹서버 없이 파일로 열어도 동작, 인쇄용
+                스타일로 PDF 저장
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 06 차이점 -->
+        <section class="sec" id="rules">
+          <header class="sec-hd">
+            <span class="no">06</span>
+            <div>
+              <small>COMPARE</small>
+              <h2>실제 채팅형 AI 이미지와의 차이점</h2>
+            </div>
+          </header>
+          <div class="rules">
+            <div class="card ok">
+              <h4>이럴 땐 씁니다</h4>
+              <ul>
+                <li>
+                  같은 작업을 여러 번 돌려야 할 때 (값만 바꿔 다시 실행, 비용
+                  없음)
+                </li>
+                <li>마스크나 깊이 지도처럼 화면 효과의 재료가 필요할 때</li>
+                <li>실물 사진이 오기 전 화면 시안과 연출 컷을 맞출 때</li>
+              </ul>
+            </div>
+            <div class="card no">
+              <h4>이럴 땐 안 씁니다</h4>
+              <ul>
+                <li>
+                  상품 모양이나 색이 바뀌는 결과는 판매용 사진으로 쓰지 않기
+                </li>
+                <li>작은 글자는 이미지에 맡기지 않고 웹페이지 글자로 넣기</li>
+                <li>템플릿에 👑나 API 표시가 있으면 비용부터 확인하기</li>
+              </ul>
+            </div>
+          </div>
+          <div class="nums">
+            <p><b>6개</b>직접 사용한 템플릿</p>
+            <p><b>1.8초~2분</b>한 번 실행에 걸린 시간</p>
+          </div>
+          <p class="closing">
+            아직 잘 안다고 말하긴 어렵습니다.<br />그래도
+            <span>막히면 일단 해 보고, 된 방법은 꼭 적어 두고</span> 있습니다.
+          </p>
+        </section>
+      </main>
+    </div>
+
+    <button class="to-top" type="button" aria-label="맨 위로">
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+        <path d="M12 19V5M5 12l7-7 7 7" />
+      </svg>
+    </button>
+
+    <script src="js/depth-banner.js"></script>
+    <script src="js/color-options.js"></script>
+    <script src="js/size-guide.js"></script>
+    <script src="js/preview-hints.js"></script>
+    <script src="js/page.js"></script>
+  </body>
+</html>
