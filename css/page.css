@@ -1995,6 +1995,43 @@ article {
   color: var(--accent);
 }
 
+/* 포트폴리오 이름 */
+
+.portfolio-footer {
+  border-top: 1px solid var(--line);
+  background: var(--alt);
+}
+
+.portfolio-footer .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  min-height: 88px;
+}
+
+.portfolio-footer p {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.portfolio-footer strong {
+  font-size: 15px;
+  color: var(--text);
+}
+
+.portfolio-footer span {
+  font-size: 13px;
+  color: var(--sub);
+}
+
+.portfolio-footer small {
+  font: 700 10px var(--en);
+  letter-spacing: 0.14em;
+  color: var(--dim);
+}
+
 /* 맨 위로 */
 
 .to-top {
@@ -2158,7 +2195,7 @@ article {
   }
 
   .top .logo span {
-    display: none;
+    font-size: 10.5px;
   }
 
   .top nav a {
@@ -2440,6 +2477,19 @@ article {
 }
 
 @media screen and (max-width: 560px) {
+  .portfolio-footer .wrap {
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    min-height: 104px;
+  }
+
+  .portfolio-footer p {
+    flex-direction: column;
+    gap: 1px;
+  }
+
   .section-map {
     margin-top: 20px;
     padding: 18px;
