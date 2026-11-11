@@ -3,6 +3,8 @@
 ComfyUI로 사진의 앞뒤 영역과 필요한 부분을 분리해 SVG·CSS·JavaScript
 인터랙션으로 연결한 의류 상품 페이지 포트폴리오입니다.
 
+**[사이트 바로가기](https://summerr-min.github.io/comfyui_product_page/)**
+
 SVG, CSS, JavaScript를 활용해 입체 배너, 컬러 옵션, 상품 이미지 전환,
 사이즈 비교 기능을 구현했습니다. AI 결과물을 그대로 사용하지 않고,
 상품 형태가 변하거나 마스크가 잘못 분리되는 사례를 비교하며
